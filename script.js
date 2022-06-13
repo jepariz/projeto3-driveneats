@@ -1,15 +1,9 @@
-
-
-
-
 let pratoSelecionado;
 let bebidaSelecionada;
 let sobremesaSelecionada;
 
-
-
 function selecaoPratos(prato){
-    pratoSelecionado = document.querySelector(".selecionado");
+    pratoSelecionado = document.querySelector(".prato-selecionado .selecionado");
         if(pratoSelecionado !== null){
             pratoSelecionado.classList.remove("selecionado");
         }

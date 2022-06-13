@@ -29,102 +29,135 @@
     <div class="prato">
         <p>Primeiro, seu prato</p>
         <div class="item">
-            <div class="item-background">
+            <div onclick="selecaoPratos(this)" class="item-background">
                 <img src="./img/frango.png">
                 <div class="info">
-                <p>Frango Yin Yang</p>
-                <p>Um pouco de batata</p>
-                <p>Um pouco de Salada</p>
-                <p>R$14,90</p>
-                </div> 
+                    <h3>Frango Yin Yang</h3>
+                    <p>Um pouco de frango,</p>
+                    <p>um pouco de batata</p>
+                        <div class="preco">
+                            <p>R$19,90</p>
+                            <img src="/img/check.png" class="escondido">
+                        </div>
+                </div>
             </div>
-            <div class="item-background">
+<!-- ----------------------------- -->
+            <div onclick="selecaoPratos(this)" class="item-background">
                 <img src="./img/burguer.jpg">
                 <div class="info">
-                <p>Burguer</p>
-                <p>Hamburguer artesanal</p>
-                <p>Molho especial</p>
-                <p>R$19,90</p>
-                </div> 
+                    <h3>Burguer</h3>
+                    <p>Hamburguer artesanal</p>
+                    <p>Molho especial</p>
+                        <div class="preco">
+                            <p>R$19,90</p>
+                            <img src="/img/check.png" class="escondido">
+                        </div>
+                </div>
             </div>
-            <div class="item-background">
-                <img src="./img/pizza.jpg">
-                <div class="info">
-                <p>Pizza</p>
-                <p>Massa tradicional</p>
-                <p>Borda simples</p>
-                <p>R$29,90</p>
-                </div> 
+<!-- ------------------------- -->
+            <div onclick="selecaoPratos(this)" class="item-background">
+                    <img src="./img/pizza.jpg">
+                    <div class="info">
+                        <h3>Pizza</h3>
+                        <p>Massa italiana</p>
+                        <p>Molho tradicional</p>
+                            <div class="preco">
+                                <p>R$39,90</p>
+                                <img src="/img/check.png" class="escondido">
+                            </div>
+                    </div>
             </div>
-        </div>
     </div> 
-
+    </div>
     <div class="bebida">
         <p>Agora, sua bebida</p>
-        <div class="item">
-            <div class="item-background">
+        <div class="item bebida-selecionada">
+            <div onclick="selecaoBebidas(this)" class="item-background">
                 <img src="./img/coca.png">
                 <div class="info">
-                <p>Coquinha geladinha</p>
-                <p>Lata 350ml</p>
-                <p>R$4,90</p>
+                    <h3>Coquinha gelada</h3>
+                    <p>Lata 350ml</p>
+                    <br>
+                        <div class="preco">
+                            <p>R$4,90</p>
+                            <img src="/img/check.png" class="escondido">
+                        </div>
                 </div> 
             </div>
-            <div class="item-background">
+            <div onclick="selecaoBebidas(this)" class="item-background ">
                 <img src="./img/suco.jpg">
                 <div class="info">
-                <p>Suco natural</p>
-                <p>Copo 500ml</p>
-                <p>R$9,90</p>
+                    <h3>Suco</h3>
+                    <p>Copo 500ml</p>
+                    <br>
+                        <div class="preco">
+                            <p>R$8,90</p>
+                            <img src="/img/check.png" class="escondido">
+                        </div>
                 </div> 
             </div>
-            <div class="item-background">
+            <div onclick="selecaoBebidas(this)" class="item-background">
                 <img src="./img/cafe.jpg">
                 <div class="info">
-                <p>Café</p>
-                <p>Copo 300ml</p>
-                <p>R$5,90</p>
+                    <h3>Cafezinho</h3>
+                    <p>Xícara 50ml</p>
+                    <br>
+                        <div class="preco">
+                            <p>R$3,90</p>
+                            <img src="/img/check.png" class="escondido">
+                        </div>
                 </div> 
             </div>
-        </div>
-    </div> 
-
+        </div> 
+    </div>
     <div class="sobremesa">
         <p>Por fim, sua sobremesa</p>
-        <div class="item">
-            <div class="item-background">
+        <div class="item sobremesa-selecionada">
+            <div onclick="selecaoSobremesa(this)" class="item-background">
                 <img src="./img/pudim.png">
                 <div class="info">
-                <p>Pudim</p>
+                <h3>Pudim</h3>
                 <p>Apenas pudim</p>
-                <p>R$7,90</p>
+                <br>
+                <div class="preco">
+                    <p>R$7,90</p>
+                    <img src="/img/check.png" class="escondido">
+                </div>
                 </div> 
             </div>
-            <div class="item-background">
+            <div onclick="selecaoSobremesa(this)" class="item-background">
                 <img src="./img/cupcake.jpg">
                 <div class="info">
-                <p>Cupcake</p>
-                <p>Cupcake de chocolate</p>
-                <p>R$10,90</p>
-                </div> 
+                    <h3>Cupcake</h3>
+                    <p>Bolinho de chocolate</p>
+                    <br>
+                        <div class="preco">
+                            <p>R$10,90</p>
+                            <img src="/img/check.png" class="escondido">
+                        </div>
+                </div>
             </div>
-            <div class="item-background">
-                <img src="./img/donut.jpg">
-                <div class="info">
-                <p>Donut</p>
-                <p>Donut colorido</p>
-                <p>R$9,90</p>
-                </div> 
+            <div onclick="selecaoSobremesa(this)" class="item-background">
+                    <img src="./img/donut.jpg">
+                    <div class="info">
+                        <h3>Donut</h3>
+                        <p>Donut colorido</p>
+                        <br>
+                            <div class="preco">
+                                <p>R$9,90</p>
+                                <img src="/img/check.png" class="escondido">
+                            </div>
+                    </div>
             </div>
-        </div>
     </div> 
-
+    </div>
+   
 <!-- Barra inferior -->
 
-<div class="barra-inferior">
-    <button>Selecione os 3 itens para fechar o pedido</button>
-</div>
-
+    <div class="barra-inferior">
+        <button class="botao">Selecione os 3 itens 
+        <br>    para fechar o pedido</button>
+    </div>
 
     </div>
     <script src="script.js"></script>

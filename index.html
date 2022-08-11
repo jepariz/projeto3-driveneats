@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>DrivenEats</title>
+</head>
+<body>
+    <div class="topo">
+        <h1>DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+    </div>  
+
+    <div class="pedidos">
+
+        <h2>Primeiro, seu prato</h2>
+
+        <div class="pratos">
+
+            <div class="prato" onclick="selecionarPrato(this)">
+                <img src="./img/burguer.jpg" alt="burguer">
+                <p>Burguer Artesanal</p>
+                <p>Hamburguer aresanal e pão da casa</p>
+                <div class="preco">
+                    <p>R$ 19,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+
+            <div class="prato" onclick="selecionarPrato(this)">
+                <img src="./img/frango.png" alt="frango e fritas">
+                <p>Frango e Fritas</p>
+                <p>Um pouco de frango e um pouco de fritas</p>
+                <div class="preco">
+                    <p>R$ 25,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+
+            <div class="prato" onclick="selecionarPrato(this)">
+                <img src="./img/pizza.jpg" alt="pizza">
+                <p>Pizza da Casa</p>
+                <p>Massa italiana e molho do chef</p>
+                <div class="preco">
+                    <p>R$ 29,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Agora, sua bebida</h2>
+
+        <div class="bebidas">
+
+            <div class="bebida">
+                <img src="./img/cafe.jpg" alt="café">
+                <p>Cafezinho</p>
+                <p>Xícara 50ml </p>
+                <div class="preco">
+                    <p>R$ 4,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+
+            <div class="bebida">
+                <img src="./img/coca.png" alt="coca">
+                <p>Coca</p>
+                <p>Lata 350ml</p>
+                <div class="preco">
+                    <p>R$ 7,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+
+            <div class="bebida">
+                <img src="./img/suco.jpg" alt="suco">
+                <p>Suco de Laranja</p>
+                <p>Copo 500ml</p>
+                <div class="preco">
+                    <p>R$ 9,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+        <h2>Por fim, sua sobremesa</h2>
+
+        <div class="sobremesas">
+
+            <div class="sobremesa">
+                <img src="./img/cupcake.jpg" alt="cupcake">
+                <p>Cupcake</p>
+                <p>Cupcake de chocolate</p>
+                <div class="preco">
+                    <p>R$ 8,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+
+            <div class="sobremesa">
+                <img src="./img/donut.jpg" alt="donut">
+                <p>Donut</p>
+                <p>Donut com cobertura colorida</p>
+                <div class="preco">
+                    <p>R$ 15,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+
+            <div class="sobremesa">
+                <img src="./img/pudim.png" alt="pudim">
+                <p>Pudim</p>
+                <p>Pudim de Leite</p>
+                <div class="preco">
+                    <p>R$ 9,90</p>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <button>Selecione os 3 itens <br> para fechar o pedido</button>
+
+        <!-- Botão após selecionar produtos -->
+
+        <button class="pedir escondido">Fechar pedido</button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

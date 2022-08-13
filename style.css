@@ -7,6 +7,11 @@ body{
     
 }
 
+.container{
+    position: relative;
+    background-color: #EEEEEE;
+}
+
 .topo{
     width: 414px;
     height: 92px;
@@ -34,14 +39,14 @@ body{
 .pedidos{
     background-color: #EEEEEE;
     width: 414px;
-    margin-top: 92px;
+    margin-top: 110px;
 }
 
 .pedidos h2{
     font-family: 'Righteous', cursive;
     font-size: 26px;
     color: #333333;
-    margin: 25px 0 15px 20px;
+    margin: 30px 0 15px 20px;
 }
 
 .pratos, .bebidas, .sobremesas{
@@ -57,7 +62,7 @@ body{
     background-color: transparent;
 }
 
-.prato, .bebida, .sobremesa{
+.opcao{
     width: 172px;
     height: 216px;
     background-color: #FFFFFF;
@@ -69,27 +74,27 @@ body{
     justify-content: center;
 }    
 
-.prato img, .bebidas img, .sobremesa img{
+.opcao img{
     width: 144px;
     height: 87px;
     border-radius: 4px;
 }
 
-.prato p:nth-child(2), .bebida p:nth-child(2), .sobremesa p:nth-child(2){
+.opcao p:nth-child(2){
     margin-top: 10px;
     font-weight: 700;
     font-size: 16px;
 }
 
 
-.prato p:nth-child(3), .bebida p:nth-child(3), .sobremesa p:nth-child(3){
+.opcao p:nth-child(3){
     margin-top: 5px;
     font-weight: 300;
     font-size: 15px;
     color: #A6A6A6;
 }
 
-.preco p:nth-child(1){
+.opcao p:nth-child(1){
     margin-top: 10px;
     font-size: 16px;
     color: #000000;
@@ -100,11 +105,13 @@ body{
     justify-content: space-between;
 }
 
-ion-icon{
+.opcao .preco .check{
     font-size: 19px;
     margin-top: 10px;
-    color: #fff; 
+    color: #32B72F;
+    opacity: 0;
     }
+
 
 .sobremesas{
     margin-bottom: 92px;
@@ -140,10 +147,14 @@ ion-icon{
     height: 61px;
     border-radius: 50px;
     background-color: #32B72F;
-    font-size: 20px;
-    color: #fff;
     text-align: center;
     margin: 10px 0 10px 0;
+}
+
+.pedir a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
 }
 
 
@@ -153,14 +164,103 @@ ion-icon{
     box-shadow: 0px 0px 0px 5px #32B72F inset;
 }
 
-.cor-icone{
-    color:  #32B72F;
-}
-
-.color-icone-escondido{
-    color: #fff;
+.pedidos .opcoes .opcao.selecionado .check{
+    opacity: 1;
 }
 
 .escondido{
+    display: none;
+}
+
+
+/* Tela de confirmação de pedido - Bônus */
+
+.tela-final{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo{
+    width: 414px;
+    height: 1030px;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.container-pedido{
+    width: 377px;
+    height: 353px;
+    background-color:#50D074;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px 1px #00000040;
+    position: absolute;
+    z-index: 1;
+    top: 200px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.titulo{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.pedido{
+    width: 329px;
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.prato-pedido, .bebida-pedida, .sobremesa-pedida, .total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nome-item, .preco-item{
+    font-size: 22px;
+    color: #fff;
+}
+
+.total p{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.container-pedido button:nth-child(3){
+    margin-top: 20px;
+    border: none;
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container-pedido button:nth-child(3) a{
+    color:#50D074;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.container-pedido button:nth-child(4){
+    margin-top: 20px;
+    border: none;
+    background-color: #50D074;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.esconder{
     display: none;
 }

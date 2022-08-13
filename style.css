@@ -264,3 +264,25 @@ body{
 .esconder{
     display: none;
 }
+
+/* Responsividade pra poder ver no cel :) */
+
+@media (max-width: 365px){
+
+   .topo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+
+   .pedidos h2{
+    margin-left: 40px;
+    margin-right: 30px;
+   }
+
+   .pratos, .bebidas, .sobremesas{
+    margin-left: 40px;
+    margin-right: 30px;
+   }
+}

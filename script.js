@@ -7,6 +7,7 @@ let valorBebida;
 let valorSobremesa;
 
 let habilitarBotao;
+let desabilitarBotao;
 
 let total;
 
@@ -14,6 +15,7 @@ let nomeConsumidor;
 let endereco;
 let mensagem;
 let telefone;
+
 
 // Funções para selecionar os itens ------------------------------------------------------------
 
@@ -81,15 +83,19 @@ function selecionarSobremesa(sobremesa){
 
 // Função para finalizar o pedido -----------------------------------------------------------------------
 
+let pratoPedido;
+let bebidaPedida;
+let sobremesaPedida;
+
 function fecharPedido (){
 
-const pratoPedido = document.querySelector(".pratos .selecionado");
-const bebidaPedida = document.querySelector(".bebidas .selecionado");
-const sobremesaPedida = document.querySelector(".sobremesas .selecionado");
+pratoPedido = document.querySelector(".pratos .selecionado");
+bebidaPedida = document.querySelector(".bebidas .selecionado");
+sobremesaPedida = document.querySelector(".sobremesas .selecionado");
 
 if((pratoPedido !== null) && (bebidaPedida !== null) && (sobremesaPedida !== null)){
 
-    const desabilitarBotao = document.querySelector(".footer .botao-padrao");
+    desabilitarBotao = document.querySelector(".footer .botao-padrao");
      habilitarBotao = document.querySelector(".footer .pedir")
  
 
@@ -143,9 +149,12 @@ function enviarMsg(){
 
 function confirmarPedido(){
 
+
     const telaConfirmacao = document.querySelector(".tela-final");
     telaConfirmacao.classList.remove("esconder");
+    
 
+    
     const pedidoFinal = document.querySelector(".pedido");
     pedidoFinal.innerHTML = `
 
@@ -173,6 +182,11 @@ function cancelar(){
     telaAtual.classList.add("esconder");
 
     const refazerPedido = document.querySelector(".pedidos .selecionado");
-    console.log(refazerPedido)
     refazerPedido.classList.remove("selecionado");
+
+    const botaoPedir = document.querySelector(".pedir");
+    botaoPedir.classList.add("escondido");
+
+    const botaoPadrao = document.querySelector(".botao-padrao");
+    botaoPadrao.classList.remove("escondido");
 }

@@ -271,6 +271,7 @@ body{
 
     .container{
         height: 1080px;
+        width: 100%;
     }
 
    .topo{
@@ -296,6 +297,10 @@ body{
 
    .container-pedido{
     width: 100%;
-   
    }
+
+   .footer button:nth-child(1), .pedir{
+    width: 300px;
+   }
+
 }
